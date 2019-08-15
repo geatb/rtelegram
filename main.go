@@ -137,7 +137,7 @@ func init() {
 	// define arguments and parse them.
 	flag.StringVar(&BotToken, "token", "", "Telegram bot token, Can be passed via environment variable 'RT_TOKEN'")
 	flag.StringVar(&mastersStr, "masters", "", "Comma-seperated Telegram handlers, The bot will only respond to them, Can be passed via environment variable 'RT_MASTERS'")
-	flag.StringVar(&SCGIURL, "url", "localhost:5000", "rTorrent SCGI URL")
+	flag.StringVar(&SCGIURL, "url", "localhost:5131", "rTorrent SCGI URL")
 	flag.StringVar(&LogFile, "logfile", "", "Send logs to a file")
 	flag.StringVar(&ComLogFile, "completed-torrents-logfile", "", "Watch completed torrents log file to notify upon new ones.")
 	flag.BoolVar(&NoLive, "no-live", false, "Don't edit and update info after sending")
